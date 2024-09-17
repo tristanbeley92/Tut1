@@ -1,0 +1,168 @@
+<!DOCTYPE html>   <!--Informs browser that this an HTML Document-->
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"> <!--Makes page look good on all screen sizes-->
+<link rel="stylesheet" href="">
+
+<style>
+  /* Helps photo to fit on website */
+  body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav {
+  background-color: #171741;
+  overflow: hidden;
+}
+
+/* Link style in bar*/
+.nav a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration:wavy underline;
+  font-size: 20px;
+}
+
+/*Colour of links on hover */
+.nav a:hover {
+  background-color: #543d8b;
+  color: rgb(187, 187, 226);
+}
+
+/* Colour to current link */
+.nav a.active {
+  background-color: #4521ae;
+  color: rgb(255, 255, 255);
+}
+
+/*My footer customization*/
+.footer{
+  position: fixed;
+  left: 0%;
+  bottom: 0%;
+  width: 100%;
+  background-color: rgb(33, 4, 33);
+  color: white;
+  text-align: center;
+}
+
+/* allows for image and contact to be beside one another */
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #2c0337;
+  color: rgb(251, 249, 249);
+  padding: 12px 20px;
+  margin-bottom: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #e31616;
+}
+
+/* Style the container/contact section */
+.sectiontop {
+  border-radius: 10px;
+  background-color: #320548;
+  padding: 10px;
+}
+
+
+/* Create two columns that float next to eachother */
+.contactme {
+  float: right;
+  width: 45%;
+  margin-top: 6px;
+  padding: 20px;
+}
+.sectionmid{
+  float: center;
+  border-radius: 1px;
+  background-color: #220637;
+  margin-left: 50%;
+  padding: 1px;
+  height: 570px;
+  width: 1%;
+}
+
+.aboutme{
+  float: left;
+  width: 49%;
+  margin-top: 6px;
+  padding: 20px;;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+
+<body>
+<div class="nav">
+ 
+  <a href="index.html">index.html</a>
+  <a href="Aboutme.html">About Me</a>
+  <a href="Experince.html">Experience</a>
+  <a class = "active" href="Contact.html">Contact</a>
+</div>
+</body>
+
+<div class="sectiontop"></div>
+  <div class="row">
+
+    <div class="aboutme">
+        <h1 style= "font-size:100px" style= "text-align: center;">Eager To Know More?</h1>
+    </div>
+    <div class="contactme">
+      <div style="text-align:center">
+        <h2>Contact Me</h2>
+        <p>     -     </p>
+      <form action="/action_page.php">
+        <label for="flname">First and Last Name</label>
+        <input type="text" id="flname" name="firstname" placeholder="Your name..">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="lastname" placeholder="Your Email..">
+        <label for="school">School</label>
+        <select id="school" name="school">
+          <option value="Western">Western</option>
+          <option value="Guelph">Guelph</option>
+          <option value="Waterloo">Waterloo</option>
+          <option value="UofT">UofT</option>
+          <option value="Other">Other</option>
+        </select>
+        <label for="subject">Comments</label>
+        <textarea id="subject" name="subject" placeholder="Comments.." style="height:70px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+  <div class="sectionmid"></div>
+</div>
+
+<div class="footer">
+  <p>Tristan's Footer</p>
+</div>
+</html>
